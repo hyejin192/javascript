@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 변수:데이터를 저장하는 공간
+        /* var num = 10;
+        var str = "javascript"
+        var bul = true; */
+
+        var num  = 10,
+            str = "Hello Javascript!",
+            bul = true;
+
+        var text1="Javascript"
+        var text2="basic"
+        document.write(text1 + " " + text2) 
+        // document(문서에).write(적어라)
+        // + => 연결해주는 역할
+
+        var 민수 = "2";
+        var 민숙 = 4;
+        var 말숙 = 3;
+        document.write("<br>")
+        document.write(민수 + 민숙) // "24"
+        document.write("<br>") // 강제 줄바꿈
+        document.write(민숙 + 민수) // "42"
+        document.write("<br>")
+        document.write(민숙 + 말숙 + 민수); //"72"
+        document.write("<br>")
+        document.write(민수 + 민숙 + 말숙); //"243" , 문자와 숫자가 만나면 문자가 됨
+        document.write("<br>")
+        document.write(민수 - 민숙 
+        + "<br>") // -2 
+        // +를 제외한 나머지 부호는 "2"를 숫자 2로 인식함
+        // 문자화숫자는 +를 제외한 다른 연산자에서는 숫자로 인식
+        document.write(민수 * 민숙 + "<br>") //8
+        document.write(민숙 / 민수 + "<br>") //2
+
+        var 일동 = 5;
+        var 이동 = 2;
+        document.write(일동 % 이동 + "<br>");//1 (나눈 후 나머지 값을 나타냄)
+
+        var 후치 = 3;
+        후치 ++;
+        document.write(후치 + "<br>") //++; == 후치+1 == 4
+
+        var 전치 = 3;
+        ++전치;
+        document.write(전치 + "<br>")
+
+        var 오동 = 5;
+        오동 = 오동 + 1;
+        document.write(오동 + "<br>") // 6 (우측부터 계산)
+    </script>
+</body>
+</html>

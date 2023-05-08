@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var 민숙 = 5;
+        민숙++;
+        document.write(민숙 + "<br>"); //6
+
+        민숙=민숙+2;
+        document.write(민숙 + "<br>"); //8
+
+        민숙 += 4;
+        // 민숙 = 민숙 + 4; 현재 민숙은 8인 상태
+        document.write(민숙 + "<br>"); //12
+
+        var 철수 = 5;
+        철수 = 철수  + 4;
+        document.write(철수 + "<br>"); //9
+
+        var 철민 = 7;
+        철민 += 3;
+        document.write(철민 + "<br>"); //10
+
+        var 철식 = 9;
+        /* 철식에게 9를 더해서 철식에게 다시 넣어라 */
+        철식 += 9;
+        document.write(철식 + "<br>"); 
+
+        var 일동 = 9;
+        // 일동 = 일동 -3;
+        일동 -= 3;
+        document.write(일동 + "<br>"); 
+
+        var 이동 = 8;
+        이동--;
+        document.write(이동 + "<br>"); 
+    </script>
+    <hr>
+    <script>
+        // var, let, const 변수 만들 때 쓰는 키워드
+
+        var 삼동 = 3;
+        document.write(삼동 + "<br>"); 
+        삼동 = 4;
+        document.write(삼동 + "<br>");
+        // 삼동이 30이라는 변수를 또 다시 정의 (이렇게 중복 이름으로 정의하면 x) 
+        var 삼동 = 30;
+        document.write(삼동 + "<br>");
+        
+        let 사동 = 5;
+        // let 사동 = 4; let은 이미 정의되어있는 이름으로 또 다시 정의흘 하게 되면 오류 발생
+        사동 = 20; // 다른 수를 할당해서 변수의 데이터를 변경하는 기능은 가능
+
+        const 오동 = 3.14; // 상수(변하지 않는 값)는 변수를 선언하자마자 값을 할당해야 한다
+        // 오동 = 5; 다른 값을 할당할 수 없다 (변하지 않음)
+        document.write(오동 + "<br>" + "<hr>");
+        // const(constant(상수))키워드로 선언하는 변수는 데이터를 변경할 수 없어서 변수라고 부르지 않고 상수(변하지 않는 값)라고 부른다. 
+        // var,let은 변수선언, const는 상수선언이라 부른다.
+        
+        
+        document.write(콜라 + "<br>");
+        var 콜라 = 30;
+        document.write(콜라);
+
+        document.write(사이다);
+        let 사이다 = 50;
+
+        document.wirte(환타);
+        const 환타 = 40;
+     </script>
+
+</body>
+</html>
