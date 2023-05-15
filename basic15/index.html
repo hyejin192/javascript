@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 반복문-for, do while문, while문 -->
+    <script>
+        // While문
+
+        //let x = 초기값;
+
+        // while (조건문) {
+        //   console.log(x)
+        //   증가감식
+        // }
+
+        let x = 0;
+
+        while (x < 5) {
+            // x가 5보다 작을 때까지 반복
+            console.log(x)
+            x++;
+        }
+
+        let y = 0;
+
+        // 9/2 ==> 4 (몫)
+        // 9%2 ==> 1 (나머지)
+        while (y < 10) {
+            y++;
+            if (y % 2 == 0) { // y가 짝수일 때
+                continue; // 조건문을 만족할 땐 밑에 내용을 지나침 (콘솔 적용 x)
+
+            }
+            console.log("y : " + y) // y가 홀수 일 때 콘솔이 찍힘
+        }
+
+        let m = 0;
+
+        // 9/2 ==> 4 (몫)
+        // 9%2 ==> 1 (나머지)
+        while (m < 10) {
+            m++;
+            if (m == 5) {
+                break; // m이 5가 되기 전까지만 반복, 5가 되면 while문 전체의 실행을 멈춤
+
+            }
+            console.log("m : " + m)
+        }
+
+        let i = 0;
+
+        // 9/2 ==> 4 (몫)
+        // 9%2 ==> 1 (나머지)
+        while (i < 10) {
+            i++;
+            if (i%2 == 1) { // i가 홀수일 때 조건문 전체를 통과시킴 (콘솔에 찍히는 건 짝수)
+                continue; 
+
+            }
+            console.log("i : " + i)
+        }
+    </script>
+</body>
+
+</html>

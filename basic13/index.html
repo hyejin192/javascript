@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>덧셈 계산기</h3>
+    <form action="#">
+        첫번째 정수:<input id="x"><br>
+        두번째 정수:<input id="y"><br>
+        세번째 정수:<input id="i"><br>
+        합계:<input id="sum"><br>
+
+        <input type="button" value="계산" onclick="더하기()">
+    </form>
+
+    <script>
+        function 더하기() {
+            let x값 = document.getElementById("x").value;
+            console.log(x값)
+            let y값 = document.querySelector("#y").value;
+            console.log(y값)
+            let i값 = document.getElementById('i').value;
+            let 합계 = Number(x값) + Number(y값) + Number(i값)
+            console.log(합계)
+            
+            // 합계 칸에 숫자 넣는법
+            /* document.getElementById("sum").value=합계 */
+            let result = document.getElementById("sum")
+            result.value=합계
+        }
+
+    </script>
+</body>
+</html>

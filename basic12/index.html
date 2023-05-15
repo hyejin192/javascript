@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test">This is a heading</h1>
+    <button type="button" onClick="함수()">Click me!</button>
+    <!-- 호이스팅이 되어있기 때문에 위치 상관없이 읽어드린다 -->
+    <script>
+        // id를 부르는 방법
+        // let tit = document.getElementById("test");
+        let tit = document.querySelector("#test")
+        console.log(tit)
+        function 함수(){
+            tit.style.color="#f00"; // style 부르는 법
+            tit.style.backgroundColor="grey"
+        }
+    </script>
+</body>
+</html>

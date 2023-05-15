@@ -53,8 +53,7 @@
             console.log(데야 + "떡입니다.")
         }
         방앗간("쑥")
-        방앗간("무지개")
-
+        방앗간("무지개" )
 
 
         // 두 개의 동일한 함수가 있는 경우에는 밑에 있는 함수를 호출
@@ -66,7 +65,7 @@
         }
         샤넬미용실()
 
-        document.write("<br>")
+        document.write("<br>" + "<br>")
 
         // 이름이 없는 함수 (익명함수)
         // 함수에 이름이 없기 때문에 변수에 넣어서 사용하는 함수
@@ -93,6 +92,66 @@
 
         }
         배달의민족("경성대")
+
+    </script>
+
+    <script>
+        // 리턴문(return)을 사용한 매개변수가 있는 함수
+        function 리턴문(num) {
+            return num * num
+            /* 결과값이 있는 함수입니다.
+            return이라는 키워드를 이용하여 함수의 결과 값을 출력하는 방법입니다.
+            로 종료하는 역할도 리턴은 실행문을 강제합니다. */
+            console.log("실행안됨") // 실행 x
+        }
+        let result =  리턴문(3)
+        console.log(result)
+
+        function 리턴문2(num, num2) {
+            return num + num2
+        }
+        let result2 = 리턴문2(10,20) // 함수호출
+        console.log(result2)
+        
+    </script>
+
+    <script>
+        // 재귀함수
+        // 함수 내에서 자신을 다시 호출하는 함수
+
+        /*  function 재귀함수(){
+            실행문;
+            재귀함수();
+        }
+
+        재귀함수(); */
+        
+        function 재귀함수(num) {
+            if(num == 0) {
+                document.write('함수의 실행이 종료합니다.')
+
+            }else {
+                document.write('함수가 실행 중입니다.' + '<br>')
+                재귀함수(num - 1); 
+            }
+            
+        }
+        재귀함수(5); // 한번 더 호출
+    </script>
+    <br><br>-콜백함수-<br>
+    <script>
+        // 콜백함수
+        // 함수를 변수에 저장하고 변수를 함수의 인자로 사용하여 매개변수에 전달되는 함수
+
+        function 콜백함수(num) {
+            for(let i = 0; i<3; i++) {
+                num(i)
+            }
+        }
+        var 인자변수 = function 인자() {
+            document.write('함수가 실행되었습니다.' + '<br>') // 함수를 변수 num에 저장
+        }
+        콜백함수(인자변수)
     </script>
 
 </body>
