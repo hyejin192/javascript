@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animateSlide</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+</head>
+<body>
+    <div id="mySlidenav" class="slidenav">
+        <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()"><i class="fas fa-times"></i></a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div><!-- mySlidenav end -->
+
+    <div id="main">
+        <h2>✈️ Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, hic.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, hic.</p>
+        <span onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="ticket">
+            <img src="img/ticket.png" alt="">
+        </div>
+    </div><!-- main end -->
+
+    <script src="main.js"></script>
+</body>
+</html>

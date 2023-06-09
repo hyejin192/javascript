@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400&display=swap');
+
+* {margin: 0; padding: 0;}
+
+h2 {}
+.tab_wrap {
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Geologica', sans-serif;
+}
+.tab {
+    background-color: #CFDAC8;
+    border: 1px solid #CDD0CB;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.3);
+}
+.tab button {
+    border: none;
+    background-color: #CFDAC8;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: #7C9473;
+}
+.tabcontent {
+    display: none;
+    position: relative;
+    padding: 14px 17px;
+    box-sizing: border-box;
+    border: 1px solid #CDD0CB;
+    border-top: none;
+}
+.tabcontent .topright {
+    position: absolute;
+    right: 10px; top: 10px;
+}
+.tabcontent .topright i {}
+.tabcontent .topright h3 {}
+.tabcontent .topright p{}

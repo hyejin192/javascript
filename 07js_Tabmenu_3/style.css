@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {margin: 0; padding: 0;}
+.tab {font-family: 'Russo One', sans-serif;}
+.tab h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+.tablink {
+    float: left;
+    width: 25%;
+    font-size: 17px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.tablink:hover {
+    background-color: #ccc;
+}
+.tabcontent {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    display: none;
+    transition: 0.3s;
+}
+.tabcontent h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+} 
+#London {color: #333;}
+#Paris {color: #333;}
+.tabcontent p {padding: 10px 0; letter-spacing: 2px;}
+#London {background-color: #D8E3E7;}
+#Paris {background-color: #DDF3F5;}
+#Tokyo {background-color: #126E82;}
+#Oslo {background-color: #132C33;}

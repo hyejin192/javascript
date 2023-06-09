@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&display=swap');
+
+* {
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    
+    
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+li {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* Search_menu  */
+
+.Search_menu {display: flex; width: 800px; margin: 0 auto;}
+.Search_menu .left {
+    width: 35%;
+    background-color: #B7C4CF;
+    padding: 15px 5px;
+}
+.Search_menu .right {
+    width: 65%;
+    padding: 15px 30px;
+    background-color: #EEE3CB;
+}
+
+.Search_menu .right p {
+    padding: 20px 0;
+    letter-spacing: 3px;
+}
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+#myMenu li {position: relative;}
+#myMenu li a {
+    padding: 12px; 
+    display: block;
+    transition: 0.3s;
+}
+#myMenu li::after {
+    content: "";
+    position: absolute;
+    left: 2px; top: 50%;
+    width: 4px; height: 4px;
+    background-color: #967E76;
+    border-radius: 50%;
+}
+#myMenu li a:hover {
+    background-color: #eee;
+}

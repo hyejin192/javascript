@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabmenu_3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tab">
+        <h2>Tab menu</h2>
+        <div id="London" class="tabcontent">
+            <img src="https://cdn-icons-png.flaticon.com/128/206/206592.png" alt="">
+            <h3>London</h3>
+            <p>런던은 영국의 도시입니다.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur.</p>
+        </div><!-- London -->
+        <div id="Paris" class="tabcontent">
+            <img src="https://cdn-icons-png.flaticon.com/128/206/206657.png" alt="">
+            <h3>Paris</h3>
+            <p>파리은 프랑스의 도시입니다.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur.</p>
+        </div><!-- Paris -->
+        <div id="Tokyo" class="tabcontent">
+            <img src="https://cdn-icons-png.flaticon.com/128/555/555646.png" alt="">
+            <h3>Tokyo</h3>
+            <p>도쿄는 일본의 도시입니다.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur.</p>
+        </div><!-- Tokyo -->
+        <div id="Oslo" class="tabcontent">
+            <img src="https://cdn-icons-png.flaticon.com/128/206/206615.png" alt="">
+            <h3>Oslo</h3>
+            <p>오슬로는 노르웨이의 도시입니다.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur.</p>
+        </div><!-- Oslo -->
+
+        <button class="tablink"id="defaultOpen" onclick="openCity('London',this,'#D8E3E7')">London</button>
+        <button class="tablink" onclick="openCity('Paris',this,'#DDF3F5')">Paris</button>
+        <button class="tablink" onclick="openCity('Tokyo',this,'#126E82')">Tokyo</button>
+        <button class="tablink" onclick="openCity('Oslo',this,'#132C33')">Oslo</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

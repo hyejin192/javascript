@@ -22,7 +22,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.accordion:hover {
+.accordion:hover,
+.active {
     background-color: #ccc;
 }
 .accordion::after {
@@ -30,10 +31,14 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+.accordion.active::after {
+    content: "\f068";
+}
 .panel {
     padding: 0 18px;
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s;
+    background-color: rgba(135, 207, 235, 0.575);
 }

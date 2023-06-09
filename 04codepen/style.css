@@ -1,0 +1,11 @@
+.one {width: 500px; margin: 0 auto;}
+.one iframe {width: 100%;}
+
+.two {
+    margin-top: 30px;
+    width: 500px; 
+    height: 340px; 
+    margin-left: auto;
+    overflow: hidden;
+}
+.two iframe {width: 100%;}
