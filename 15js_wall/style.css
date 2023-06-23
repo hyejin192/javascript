@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+a {color: #222; text-decoration: none;}
+
+li {list-style: none;}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 500vh;
+    background-color: #C4D7B2;
+}
+
+.World {
+    position: fixed;
+    left: 0; top: 0;
+    /* 화면 가득 */
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+.World .stage {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    transform-style: preserve-3d;
+}
+.World .stage .house {
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: translateZ(-490vw);
+}
+.World .stage .house .wall {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+}
+.World .stage .house .wall-left {
+    width: 1000vw; /* 화면의 10배 */
+    background-color: #F7FFE5;
+    transform: rotateY(90deg) translateZ(-500vw);
+}
+.World .stage .house .wall-right {
+    width: 1000vw; /* 화면의 10배 */
+    background-color: #F7FFE5;
+    transform: rotateY(90deg) translateZ(-401vw);
+}
+
+.World .stage .house .wall-front {}
+.World .stage .house .wall-front-a {transform: translateZ(300vw);}
+.World .stage .house .wall-front-b {transform: translateZ(0vw);}
+.World .stage .house .wall-front-c {transform: translateZ(-300vw);}
+.World .stage .house .wall-front-d {transform: translateZ(-500vw);}
+
+.World .stage .house .wall-front .wall-content {}

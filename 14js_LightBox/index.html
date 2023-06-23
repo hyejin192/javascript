@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+</head>
+
+<body>
+    <h2>STÜSSY & MARTINE <br> ROSE</h2>
+    
+    <div class="row">
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---1_720x.jpg?v=1681230182"
+                class="hover-shadow cursor" onclick="openModal(); currentSlide(1)">
+        </div>
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---8_720x.jpg?v=1681230337"
+                class="hover-shadow cursor" onclick="openModal(); currentSlide(1)">
+        </div>
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---7_720x.jpg?v=1681230251"
+                class="hover-shadow cursor" onclick="openModal(); currentSlide(1)">
+        </div>
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---4_720x.jpg?v=1681230417"
+                class="hover-shadow cursor" onclick="openModal(); currentSlide(1)">
+        </div>
+    </div><!-- row end -->
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()"><i class="fas fa-times"></i>
+        </span><!-- close end -->
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1/4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---1_720x.jpg?v=1681230182" alt="">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2/4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---8_720x.jpg?v=1681230337" alt="">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3/4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---7_720x.jpg?v=1681230251" alt="">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4/4</div>
+                <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---4_720x.jpg?v=1681230417" alt="">
+            </div>
+
+            <a href="#" class="prev" onclick="plusSlide(-1)"><i class="fas fa-caret-left"></i></a>
+            <a href="#" class="next" onclick="plusSlide(1)"><i class="fas fa-caret-right"></i></a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div><!-- caption-container end -->
+
+            <div class="row">
+                <div class="column">
+                    <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---1_720x.jpg?v=1681230182"
+                        class="demo cursor" alt="stussy1" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---8_720x.jpg?v=1681230337"
+                        class="demo cursor" alt="stussy2" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---7_720x.jpg?v=1681230251"
+                        class="demo cursor" alt="stussy3" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img src="https://cdn.shopify.com/s/files/1/0343/3988/1005/files/Stussy-Martine-Rose---Images---4_720x.jpg?v=1681230417"
+                        class="demo cursor" alt="stussy4" onclick="currentSlide(4)">
+                </div>
+            </div>
+        </div><!-- modal-content end -->
+    </div><!-- myModal end -->
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

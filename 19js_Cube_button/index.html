@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D CUBE-2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+</head>
+<body>
+    <section class="main">
+        <h1><i class="fas fa-cube"></i>CUBE</h1>
+        <div class="Wrapper">
+            <div class="box-area">
+                <div class="box box-front"><h2>1</h2></div>
+                <div class="box box-right"><h2>2</h2></div>
+                <div class="box box-back"><h2>3</h2></div>
+                <div class="box box-left"><h2>4</h2></div>
+                <div class="box box-top"><h2>5</h2></div>
+                <div class="box box-bottom"><h2>6</h2></div>
+            </div><!-- box-area end -->
+            
+            <div class="rotate-x-btn">
+                <button class="rotate-x-bottom" onclick="rotateXAxis(-1)"><i class="fas fa-caret-square-down"></i></button>
+                <button class="rotate-x-top" onclick="rotateXAxis(1)"><i class="fas fa-caret-square-up"></i></button>
+            </div><!-- rotate-x-btn -->
+            <div class="rotate-y-btn">
+                <button class="rotate-y-left" onclick="rotateYAxis(-1)"><i class="fas fa-caret-square-left"></i></button>
+                <button class="rotate-y-right" onclick="rotateYAxis(1)"><i class="fas fa-caret-square-right"></i></button>
+            </div><!-- rotate-y-btn -->
+            <div class="front" onclick="front()">정면</div>
+        </div><!-- Wrapper end -->
+    </section><!-- main end -->
+
+    <script src="main.js"></script>
+</body>
+</html>

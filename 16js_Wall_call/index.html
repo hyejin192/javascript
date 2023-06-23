@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .main {position: relative;}
+        .main .frame {
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px; height: 300px;
+        }
+        .main iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="top" style="height: 100vh; background-color: skyblue"></div>
+    <div class="main" style="height: 100vh;">
+        <div class="frame"><iframe src="../15js_wall/index.html" frameborder="0"></iframe></div>
+    </div>
+    <div class="bottom" style="height: 100vh; background-color: skyblue"></div>
+  </body>
+</html>

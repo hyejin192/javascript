@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+* {margin: 0; padding: 0;}
+
+/* 변수 */
+:root {
+    --primary: #D6E0F0;
+    /* --secondard: #8294C4; */
+    --secondard: #F1F6F9;
+}
+
+.app {
+    font-family: 'Bagel Fat One', cursive;
+    background-color: var(--primary);
+    color: var(--secondard);
+}
+.hero {position: relative; width: 100%; height: 100%;}
+.hero_wrapper {
+    width: 100%; height: 100%;
+}
+
+.hero_media{
+    position: absolute;
+    object-fit: contain;
+    z-index: 999;
+    /* 어떤 이벤트에도 방해받지 않겠다 */
+    pointer-events: none;
+    transform: scale(0.3);
+    transition: 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hero_title {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero_title .ofh {overflow: hidden;}
+.hero_title h1 {
+    font-size: 17vw;
+    text-align: center;
+    text-shadow: 8px 6px 2px rgba(0,0,0,0.3);
+}
+.hero_title .ofh:nth-child(2n) h1 {
+    color: #FFE6EB;
+}
+.hero_title .ofh:nth-child(2n-1) h1 {
+    margin-bottom: 10vw;
+}

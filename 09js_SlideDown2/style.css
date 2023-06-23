@@ -7,8 +7,8 @@ a {color: #000; text-decoration: none;}
 
 #navbar {
     position: fixed;
-    top: 0; width: 100%;
-    background-color: #606C5D;
+    top: -64px; width: 100%;
+    background-color: #F2D8D8;
     transition: 0.3s;
     display: flex;
     gap: 15px;
@@ -17,10 +17,13 @@ a {color: #000; text-decoration: none;}
 }
 #navbar a {
     display: block;
-    color: #f2f2f2;
+    color: #666;
     padding: 15px;
     font-family: 'Playfair Display', serif;
     font-size: 25px;
     letter-spacing: 2px;
+    font-weight: 500;
 }
 .main {padding: 15px 15px 200vh;}
+.main strong {font-size: 35px; font-weight: bold;}
+.main p {margin: 20px 0;}
