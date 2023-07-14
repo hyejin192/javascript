@@ -1,0 +1,48 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@700;800;900&display=swap');
+/* font-family: 'Geologica', sans-serif; */
+
+* {margin: 0; padding: 0;}
+
+.five {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0a0e3d, #4e4e4e);
+    color: rgb(239,239,243);
+    overflow: hidden;
+}
+.text_wrap {
+    
+}
+.text {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    rotate: -15deg;
+    font-size: 240px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: -2px 20px 0px rgba(0,0,0,0.2);
+}
+.text span {
+    font-family: 'Geologica', sans-serif;
+
+}
+.base-anim {
+    animation: up_down 3s ease-in-out infinite alternate,
+    rotate 4s ease-in-out infinite alternate;
+}
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(194, 194, 194);
+}
+
+
+@keyframes up_down {
+    0% {transform: translate(-50%,-50%) translateY(-50px);}
+    100% {transform: translate(-50%,-50%) translateY(50px);}
+}
+@keyframes rotate {
+    0% {rotate: -15deg;}
+    100% {rotate: 15deg;}
+}

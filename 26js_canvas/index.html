@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+
+
+
+
+    <script>
+        // canvas안에 이미지를 넣는 법
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d'); // 필수적
+
+        // 이미지 생성
+        let image = document.createElement('img') // 이미지 태그 생성
+        image.src='https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/315454128_576073057618396_3363876090255581990_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=4QFfFcuOdhgAX_Kc5Q0&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=Mjk3MjU1NzgzMjE0Mzk1ODE5Nw%3D%3D.2-ccb7-5&oh=00_AfC2FBWAOtozrPLcvDt5Xq2IN9pXHnDcrZQKY-4IzDs2nA&oe=64A61711&_nc_sid=b41fef';
+
+        //context.drawImage(image,x,y,width,height)
+        context.drawImage(image,0,0,400,400)
+    </script>
+</body>
+</html>

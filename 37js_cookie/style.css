@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+.notice {
+    position: fixed;
+    top: 100px; left: 100px;
+    padding: 100px 50px;
+    border: 1px solid #ccc;
+}
+
+.close {
+    position: absolute;
+    right: 10px; top: 10px;
+
+}

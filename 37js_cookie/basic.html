@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie 만들기 연습</title>
+</head>
+<body>
+    
+
+    <script>
+        // 쿠키를 생성할 때 필수항목 - 쿠키이름과 소멸시기
+        // 쿠키이름- cookieName
+        // 쿠키의 소멸시기 expires
+        // 쿠키를 만들 때 시간 UTC협업 세계시를 사용
+
+        // 오늘의 날짜
+        let date = new Date(); // 값을 만들지 않아도 브라우저가 이미 알고있는 함수(내장함수)
+        
+        // console.log(date.getDate()) // 13 (오늘의 날짜 7월 13일이면 13으로 출력)
+        // console.log(date.getDate()+7) // 20 (오늘의 날짜에 7을 더한다)
+
+
+        // 날짜를 지정
+        // 변수.setDate(새로운 날짜)
+        date.setDate(date.getDate()+7)
+        // console.log(date) // 7월 20일 날짜로 지정해 날짜를 변형시킴
+
+
+        // 쿠키 생성
+        let setCookie = "";
+        setCookie += "Cookiename=green; " // green이라는 쿠키 생성 반드시 ;뒤에 한 칸 띄우기
+        setCookie += 'expires='+date.toUTCString(); // UTC협정세계시
+        console.log(setCookie)
+
+        // 쿠키에 저장하기
+        document.cookie=setCookie;
+
+    </script>
+</body>
+</html>

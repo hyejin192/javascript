@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+
+.images {
+    background: url(img/sequence/sky001.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%; height: 100%;
+    position: absolute;
+}
+.images img {
+    position: absolute;
+}
+
+.progress {
+    position: fixed;
+    color: #fff;
+    background-color: #000;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    transition:  0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+}
+
+.progress .progress-bar {
+    border-top: 3px dotted rgba(160,160,160);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%; width: 0%;
+}
+
+.progress .progress-text {
+    font-size: 3vw;
+    position: absolute;
+    font-weight: bold;
+    top: 52%; width: 100%;
+    text-align: center;
+}
+
+.progress-complete .progress-bar {
+    border-top-color: rgb(255,255,255);
+}

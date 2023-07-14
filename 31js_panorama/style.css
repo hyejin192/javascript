@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+.sj_panorama {
+    position: relative;
+    overflow: hidden;
+}
+
+.text_area {
+    position: absolute;
+    z-index: 10;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 30px;
+}
+.pano_wrap {
+    white-space: nowrap;
+}
+.pano_wrap .list {
+    display: inline-block;
+    white-space: nowrap; /* 공간이 부족하더라도 밑으로 떨어지지 마라 */
+}
+.pano_wrap .list li {
+    display: inline-block;
+    width: 300px;
+}
+.controls {
+    position: absolute;
+    top: 20px; right: 20px;
+    z-index: 20;
+}
+.controls a {
+    font-size: 40px;
+}
+.controls a i {
+    position: absolute;
+    right: 0; top: 0;
+    color: #fff;
+}
+.controls a i em {
+    /* 웹 접근성 */
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.controls a.active .play {
+    opacity: 0;
+}
+.controls a .play {}
+.controls a.active .pause {
+    opacity: 1;
+}
+.controls a .pause {}
